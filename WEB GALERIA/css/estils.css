@@ -1,0 +1,91 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --principal: #1750a1;
+  --fons: #f3f1ec;
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--fons);
+}
+
+header {
+  background-color: var(--principal);
+  color: white;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+.eslogan {
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: block;
+  padding: 10px 16px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px 16px 0;
+}
+
+article {
+  position: relative;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+article img {
+  width: 100%;
+}
+
+.nou {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  padding: 4px 10px;
+  background-color: #2e7d32;
+  color: white;
+  text-transform: uppercase;
+  border-radius: 6px;
+}
+
+@media (min-width: 768px) {
+  .eslogan {
+    display: block;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  article {
+    display: inline-block;
+    width: 48%;
+    margin-right: 1%;
+    vertical-align: top;
+  }
+}
